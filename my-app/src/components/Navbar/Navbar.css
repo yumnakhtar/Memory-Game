@@ -1,5 +1,6 @@
 .jumbotron {
     margin: 0px;
+    
 }
 
 .sticky-nav {
@@ -9,7 +10,12 @@
 }
 
 .nav-title {
+    /* font-family: 'Montserrat', sans-serif; */
     text-align: center;
+}
+
+h1, p, .status, .nav-restart {
+    font-family: 'Montserrat', sans-serif;
 }
 
 .nav-restart {

@@ -15,5 +15,6 @@
   background:#6CADDC;
 }
 .card > .img-container > img {
-  width: 60%
+  height: 200px;
+  width: 200px;
 }
