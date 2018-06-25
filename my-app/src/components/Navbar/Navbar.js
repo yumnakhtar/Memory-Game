@@ -5,18 +5,20 @@ import "./Navbar.css";
 
 const Navbar = props => (
   // <div className="navbar">{props.children}>
-
-<nav className="navbar navbar-expand-lg navbar-light bg-light">
-  <a className="navbar-brand" href="/">Memory-Click</a>
-  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span className="navbar-toggler-icon"></span>
-  </button>
-  <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+<div className="sticky-nav">
+<div className="sticky-jumbo">
+  <div className="jumbotron jumbotron-fluid">
+  <div className="container nav-title">
+    <h1> Memory Game</h1>
+    <p className="lead">Play this game ans test your memory. All you have to do is make sure you don't click the same character twice.. Good Luck!</p>
+    <a className="navbar-brand nav-restart" href="/">Restart</a>
+    <div className="status" >Current Score: {props.current}</div>
+    <div className="status" >High Score: {props.high}</div>
     
   </div>
-</nav>
-
-
+</div>
+</div>
+</div>
 );
 
 export default Navbar;

@@ -8,18 +8,11 @@ import Navbar from "./components/Navbar";
 let shuffleArr = require('shuffle-array');
 
 class App extends Component {
-    // Setting this.state.friends to the friends json array
     state = {
         friends,
         currScore: 0,
         highScore: 0
     };
-
-    // shuffle = () => {
-    //     let friends = this.state.friends;
-    //     shuffleArr(friends);
-    //     this.setState({ friends });
-    // }
 
     clicked = (id) => {
         let friends = this.state.friends;
@@ -57,17 +50,16 @@ class App extends Component {
         this.setState({ friends, currScore, highScore });
     }
 
-    // Map over this.state.friends and render a FriendCard component for each friend object
     render() {
+      let highScore = this.state.highScore;
+      let currScore = this.state.currScore;
         return (
             <div>
-                <Navbar></Navbar>
-                <div>
-                    Current Score: {this.state.currScore}
-                    High Score: {this.state.highScore}
-                </div>
+                <Navbar
+                  current= {currScore}
+                  high= {highScore}
+                />
                 <Wrapper>
-                    {/* <Title>Friends List</Title> */}
                     {this.state.friends.map(friend => (
                         <FriendCard
                             id={friend.id}
