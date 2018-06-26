@@ -2,12 +2,10 @@ import React from "react";
 import "./FriendCard.css";
 
 const FriendCard = props => (
-  <div className="card" onClick={ () => {
+  <div onClick={() => {
     return props.clicked(props.id);
   }}>
-    <div className="img-container">
-      <img alt={props.name} src={props.image} />
-    </div>
+    <img alt={props.id} src={props.image} />
   </div>
 );
 
