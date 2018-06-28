@@ -1,6 +1,4 @@
-BNo# Project Title
-
-Memory Game
+# Memory Game
 
 ## Getting Started
 
