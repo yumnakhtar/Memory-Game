@@ -12,6 +12,9 @@
 
 
 .container {
-
-
+/* margin-left: 200px;
+margin-right: 200px;
+align-content: center; */
+padding-left: 100px;
+padding-right: 100px;
 }
