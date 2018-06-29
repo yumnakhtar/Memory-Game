@@ -10,13 +10,15 @@ class App extends Component {
     state = {
         friends,
         currScore: 0,
-        highScore: 0
+        highScore: 0,
+        totalTries: 0
     };
 
     clicked = (id) => {
         let friends = this.state.friends;
         let currScore = this.state.currScore;
         let targetFriend = {};
+
         friends.forEach((elem) => {
             if (elem.id === id) {
               targetFriend = elem;
@@ -37,6 +39,9 @@ class App extends Component {
         let highScore = this.state.highScore;
         let currScore = this.state.currScore;
         let friends = this.state.friends;
+        let totalTries = this.state.totalTries;
+
+        totalTries = totalTries + 1;
 
         if (currScore > highScore) {
             highScore = currScore;
@@ -46,17 +51,19 @@ class App extends Component {
             elem.clicked = false;
         });
         shuffleArr(friends);
-        this.setState({ friends, currScore, highScore });
+        this.setState({ friends, currScore, highScore, totalTries });
     }
 
     render() {
       let highScore = this.state.highScore;
       let currScore = this.state.currScore;
+      let totalTries = this.state.totalTries;
         return (
             <div>
                 <Navbar
                   current= {currScore}
                   high= {highScore}
+                  tries={totalTries}
                 />
                 <Wrapper>
                     {this.state.friends.map(friend => (

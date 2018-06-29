@@ -16,8 +16,9 @@ const Navbar = props => (
      {/* navbar */}
     <div className="navbar navbar-light bg-light sticky-nav">
       <a className="navbar-brand nav-restart" href="/">Restart</a>
-      <div className="status" >Current Score: {props.current}</div>
-      <div className="status" >High Score: {props.high}</div>
+      <span className="status navbar-text" >Current Score: {props.current}</span>
+      <span className="status navbar-text" >High Score: {props.high}</span>
+      <span className="status navbar-text" >Total Attempts: {props.tries}</span>
 
     </div>
 

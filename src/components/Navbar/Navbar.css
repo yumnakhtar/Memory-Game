@@ -18,7 +18,27 @@ h1, p, .status, .nav-restart {
     font-family: 'Montserrat', sans-serif;
 }
 
+.display-5 {
+    font-weight: bold;
+
+}
+
 .nav-restart {
     float: left;
-    padding-left: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.nav-restart {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav-restart:hover {
+    background-color: #e7e7e7;
+    margin: 1px; 
+}
+
+.nav-restart:active {
+    background: #dddcdc;
 }
