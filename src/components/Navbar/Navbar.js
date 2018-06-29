@@ -10,7 +10,7 @@ const Navbar = props => (
     <div className="jumbotron jumbotron-fluid">
       <div className="container">
         <h1 className="display-5">Memory Game</h1>
-        <p className="lead">Play this game ans test your memory. All you have to do is make sure you don't click the same character twice.. Good Luck!</p>
+        <p className="lead">Play this game and test your memory. All you have to do is make sure you don't click the same character twice.. Good Luck!</p>
       </div>
     </div>
      {/* navbar */}
